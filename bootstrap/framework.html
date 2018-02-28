@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>framework</title>
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+</head>
+
+<body>
+
+<!-- Panels Overlay -->
+<div class="panel-overlay"></div>
+
+<!-- Left Panel with Reveal effect -->
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>Left Panel content here</p>
+        <!-- Click on link with "close-panel" class will close panel -->
+        <p><a href="#" class="close-panel">Close me</a></p>
+        <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+        <p><a href="#" data-panel="right" class="open-panel">Open Right Panel</a></p>
+    </div>
+</div>
+
+<!-- Right Panel with Cover effect -->
+<div class="panel panel-right panel-cover">
+    <div class="content-block">
+        <p>Right Panel content here</p>
+        <!-- Click on link with "close-panel" class will close panel -->
+        <p><a href="#" class="close-panel">Close me</a></p>
+        <!-- Click on link with "open-panel" and data-panel="left" attribute will open Left panel -->
+        <p><a href="#" data-panel="left" class="open-panel">Open Left Panel</a></p>
+    </div>
+</div>
+
+...
+<div class="page-content">
+    <div class="content-block">
+        <!-- If no data-panel attribute, Left panel will be opened by default -->
+        <p><a href="#" class="open-panel">Open Left Panel</a></p>
+        <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+        <p><a href="#" data-panel="right" class="open-panel">Open Right Panel</a></p>
+    </div>
+</div>
+
+
+
+<!-- About Popup -->
+<div class="popup popup-about">
+    <div class="content-block">
+        <p style="text-align: center">活动规则</p>
+        <ol style="font-size: 0.7rem; margin-left: 0.9rem;">
+            <li>腾讯王卡用户可申请签约/解约微信话费代扣业务。</li>
+            <li>业务将在腾讯王卡用户成功签约/解约，并收到微信话费代扣业务签约/解约成功提醒后生效。</li>
+            <li>微信话费代扣业务采用实时代扣模式，当用户实际余额小于等于10元时，系统将对已成功签约的用户自动发起微信话费代扣。</li>
+            <li>扣费请求将按签约协议中记录的优先支付方式进行扣费，否则依次按以下顺序扣费：零钱、信用卡、借记卡。</li>
+            <li>腾讯王卡用户办理微信进行话费代扣长期享有9.85折扣。</li>
+            <li>首次成功办理的腾讯王卡用户可免费领取100分钟语音包。首次办理成功后，用户将收到办理签约成功模版消息，系统将直接赠送100分钟语包音。</li>
+            <li>已成功办理微信话费代扣业务的腾讯王卡用户，截止至2018年5月1日00:00累计代扣金额满足条件可免费领取会员：<br>
+                100＜累计代扣金额≤200元，可免费领取1个月QQ音乐绿钻豪华版；<br>
+                累计代扣金额≥200元，可免费领取1个月腾讯视频VIP会员。
+            </li>
+            <li>QQ音乐绿钻豪华版/腾讯视频会员赠送说明：<br>
+                • 本次赠送将在2018年5月1日00：00活动结束后，统一赠送。满足赠送条件的腾讯王卡用户请在页面正确填写领取QQ号信息，赠送将在48小时内到账；<br>
+                • 若因漏填QQ号而导致的赠送失败，请于2018年5月4日00：00前到活动页面补齐信息，逾时将不可领取；<br>
+                •
+                若腾讯王卡用户在2018年5月1日00：00活动结束后，赠送到账前出现停机、半停机、欠费、销户、取消代扣等异常情况，将导致赠送失败；用户号码状态恢复正常后，QQ音乐绿钻豪华版/腾讯视频会员将在次月赠送；<br>
+                • 本次活动的QQ音乐绿钻豪华版/腾讯视频会员仅能赠送给QQ账号，请准确填写QQ号，如因个人填写错误导致赠送到其他人账号，系统将无法补赠。一个QQ号仅能领取一次微信话费代扣福利。
+            </li>
+            <li>若腾讯王卡用户填写的QQ账号当前已开通QQ音乐绿钻豪华版/腾讯视频会员，则赠送资格自动顺延（在已有会员期结束后，顺延你的会员期）。</li>
+            <li>若腾讯王卡用户已开通QQ音乐绿钻豪华版/腾讯视频会员自动续费功能，本次赠送的QQ音乐绿钻豪华版/腾讯视频会员将在自动续费服务结束后赠送，如需立即赠送到账，则需要将自动续费功能暂时关闭。</li>
+            <li>该活动仅限在“王卡助手”公众号办理的微信话费代扣业务。若用户已在各省办理过微信托收、银行托收等代扣业务，则需要将原有的代扣业务取消后才能办理微信话费代扣业务，以防重复托收扣费。</li>
+            <li>若用户存在虚假交易等恶意套取活动福利的行为，中国联通保留追回福利的权利。如有疑问，可通过“王卡助手”公众号咨询在线客服。</li>
+        </ol>
+        <a id="close-btn" href="#" class="close-popup">关闭</a>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js'></script>
+<script src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#sidebar {
+  /*display: block !important;*/
+  /*position: relative;*/
+}
+
+/*.bs-docs-sidebar.affix {*/
+  /*position: fixed;*/
+/*}*/
+/*.bs-docs-sidebar {*/
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*right: 0;*/
+/*}*/
+
+#totop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
