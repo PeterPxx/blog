@@ -7,17 +7,32 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#2196f3">
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
-  <title>Framework7</title>
+  <title>webapp</title>
   <link rel="stylesheet" href="../dist/css/framework7.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
+  <style>
+    #toTop {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      color: #000;
+      background: gray;
+      z-index: 10000; !important;
+    }
+
+  </style>
 </head>
 <body>
   <div id="app">
     <div class="statusbar"></div>
     <div class="panel panel-left panel-cover">
       <div class="page">
+        <!-- Floatin Action Button -->
+        <a href="#" class="floating-button color-pink">
+          <i class="icon icon-plus"></i>
+        </a>
         <div class="page-content">
           <div class="block-title">Left Panel</div>
           <div class="block">
